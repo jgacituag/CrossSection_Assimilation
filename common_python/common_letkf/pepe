@@ -1,0 +1,727 @@
+Compiling DA routines
+running build
+running config_cc
+INFO: unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+INFO: unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+INFO: build_src
+INFO: building extension "cletkf_wloc" sources
+INFO: f2py options: []
+INFO: f2py:> /tmp/tmprh_7fgag/src.linux-x86_64-3.9/cletkf_wlocmodule.c
+creating /tmp/tmprh_7fgag/src.linux-x86_64-3.9
+Reading fortran codes...
+	Reading file 'netlib.f90' (format:fix)
+Line #1582 in netlib.f90:"      PARAMETER (ONE=1.0D+0,ZERO=0.0D+0) "
+	get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+	Reading file 'SFMT.f90' (format:free)
+	Reading file 'common_tools.f90' (format:free)
+	Reading file 'common_mtx.f90' (format:free)
+	Reading file 'common_letkf.f90' (format:free)
+	Reading file 'common_da_wloc.f90' (format:free)
+Post-processing...
+	Block: cletkf_wloc
+			Block: dspdi
+			Block: dspfa
+			Block: pythag
+			Block: rs
+			Block: tql1
+			Block: tql2
+			Block: tred1
+			Block: tred2
+			Block: daxpy
+			Block: dcopy
+			Block: ddot
+			Block: dswap
+			Block: idamax
+			Block: dgemm
+In: :cletkf_wloc:netlib.f90:dgemm
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:netlib.f90:dgemm
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: lsame
+			Block: xerbla
+			Block: mod_sfmt
+			Block: rshift128
+			Block: lshift128
+			Block: do_recursion
+In: :cletkf_wloc:SFMT.f90:do_recursion
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:SFMT.f90:do_recursion
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:SFMT.f90:do_recursion
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: gen_rand_all
+In: :cletkf_wloc:SFMT.f90:gen_rand_all
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:SFMT.f90:gen_rand_all
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:SFMT.f90:gen_rand_all
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: period_certification
+In: :cletkf_wloc:SFMT.f90:period_certification
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:SFMT.f90:period_certification
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:SFMT.f90:period_certification
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: gen_rand32
+In: :cletkf_wloc:SFMT.f90:gen_rand32
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:SFMT.f90:gen_rand32
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:SFMT.f90:gen_rand32
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: gen_rand64
+In: :cletkf_wloc:SFMT.f90:gen_rand64
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:SFMT.f90:gen_rand64
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:SFMT.f90:gen_rand64
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: init_gen_rand
+In: :cletkf_wloc:SFMT.f90:init_gen_rand
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:SFMT.f90:init_gen_rand
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:SFMT.f90:init_gen_rand
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: genrand_res53
+			Block: common_tools
+In: :cletkf_wloc:common_tools.f90:common_tools
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_tools.f90:common_tools
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_tools.f90:common_tools
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_tools.f90:common_tools
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_tools.f90:common_tools
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_tools.f90:common_tools
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_tools.f90:common_tools
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_tools.f90:common_tools
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_tools.f90:common_tools
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_tools.f90:common_tools
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_tools.f90:common_tools
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+				Block: com_mean
+				Block: com_stdev
+				Block: com_covar
+				Block: com_correl
+				Block: com_anomcorrel
+				Block: com_l2norm
+				Block: com_rms
+				Block: com_filter_lanczos
+				Block: com_rand
+				Block: com_randn
+				Block: com_interp_spline
+			Block: common_mtx
+In: :cletkf_wloc:common_mtx.f90:common_mtx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_mtx.f90:common_mtx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_mtx.f90:common_mtx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+				Block: mtx_eigen
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_eigen
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_eigen
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_eigen
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_eigen
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_eigen
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_eigen
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_eigen
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_eigen
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_eigen
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_eigen
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_eigen
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+				Block: mtx_inv
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+				Block: mtx_sqrt
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_sqrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_sqrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_sqrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_sqrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_sqrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_sqrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_sqrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_sqrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_sqrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_sqrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_sqrt
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+				Block: mtx_inv_rg
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv_rg
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv_rg
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv_rg
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv_rg
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv_rg
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv_rg
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv_rg
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv_rg
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv_rg
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv_rg
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_mtx.f90:common_mtx:mtx_inv_rg
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: common_letkf
+In: :cletkf_wloc:common_letkf.f90:common_letkf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_letkf.f90:common_letkf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_letkf.f90:common_letkf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+				Block: letkf_core
+In: :cletkf_wloc:common_letkf.f90:common_letkf:letkf_core
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_letkf.f90:common_letkf:letkf_core
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_letkf.f90:common_letkf:letkf_core
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:letkf_core
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:letkf_core
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:letkf_core
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:letkf_core
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:letkf_core
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:letkf_core
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:letkf_core
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:letkf_core
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:letkf_core
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+				Block: weight_rtps
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtps
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtps
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtps
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtps
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtps
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtps
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtps
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtps
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtps
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtps
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtps
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+				Block: weight_rtpp
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtpp
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtpp
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtpp
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtpp
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtpp
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtpp
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtpp
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtpp
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtpp
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtpp
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_rtpp
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+				Block: weight_epes
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_epes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_epes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_epes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_epes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_epes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_epes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_epes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_epes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_epes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_epes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_epes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+				Block: weight_modepes
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_modepes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_modepes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_modepes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_modepes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_modepes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_modepes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_modepes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_modepes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_modepes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_modepes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_letkf.f90:common_letkf:weight_modepes
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+			Block: common_da
+In: :cletkf_wloc:common_da_wloc.f90:common_da
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_da_wloc.f90:common_da
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_da_wloc.f90:common_da
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+{}
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_letkf_wloc
+vars2fortran: No typespec for argument "xfo".
+				Block: simple_letkf_wloc
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_letkf_wloc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_letkf_wloc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_letkf_wloc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_letkf_wloc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_letkf_wloc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_letkf_wloc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_letkf_wloc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_letkf_wloc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_letkf_wloc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_letkf_wloc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_letkf_wloc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_letkf_wloc
+analyzevars: typespec of variable 'xfo' is not defined in routine simple_letkf_wloc.
+				Block: simple_loc
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_loc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_loc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_loc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_loc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_loc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_loc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_loc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_loc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_loc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_loc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:simple_loc
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+				Block: calc_ref_ens
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref_ens
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref_ens
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref_ens
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref_ens
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref_ens
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref_ens
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref_ens
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref_ens
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref_ens
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref_ens
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref_ens
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+				Block: calc_ref
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 4
+In: :cletkf_wloc:common_da_wloc.f90:common_da:calc_ref
+get_parameters: got "eval() arg 1 must be a string, bytes or code object" on 8
+Post-processing (stage 2)...
+	Block: cletkf_wloc
+		Block: unknown_interface
+			Block: dspdi
+			Block: dspfa
+			Block: pythag
+			Block: rs
+			Block: tql1
+			Block: tql2
+			Block: tred1
+			Block: tred2
+			Block: daxpy
+			Block: dcopy
+			Block: ddot
+			Block: dswap
+			Block: idamax
+			Block: dgemm
+			Block: lsame
+			Block: xerbla
+			Block: mod_sfmt
+			Block: rshift128
+			Block: lshift128
+			Block: do_recursion
+			Block: gen_rand_all
+			Block: period_certification
+			Block: gen_rand32
+			Block: gen_rand64
+			Block: init_gen_rand
+			Block: genrand_res53
+			Block: common_tools
+				Block: com_mean
+				Block: com_stdev
+				Block: com_covar
+				Block: com_correl
+				Block: com_anomcorrel
+				Block: com_l2norm
+				Block: com_rms
+				Block: com_filter_lanczos
+				Block: com_rand
+				Block: com_randn
+				Block: com_interp_spline
+			Block: common_mtx
+				Block: mtx_eigen
+				Block: mtx_inv
+				Block: mtx_sqrt
+				Block: mtx_inv_rg
+			Block: common_letkf
+				Block: letkf_core
+				Block: weight_rtps
+				Block: weight_rtpp
+				Block: weight_epes
+				Block: weight_modepes
+			Block: common_da
+				Block: simple_letkf_wloc
+				Block: simple_loc
+				Block: calc_ref_ens
+				Block: calc_ref
+Building modules...
+    Building module "cletkf_wloc"...
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "dspdi"...
+          dspdi(ap,n,kpvt,det,inert,work,job)
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "dspfa"...
+          dspfa(ap,n,kpvt,info)
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+		Creating wrapper for Fortran function "pythag"("pythag")...
+        Constructing wrapper function "pythag"...
+          pythag = pythag(a,b)
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "rs"...
+          rs(a,w,matz,z,fv1,fv2,ierr,[nm,n])
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "tql1"...
+          tql1(d,e,ierr,[n])
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "tql2"...
+          tql2(d,e,z,ierr,[nm,n])
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "tred1"...
+          tred1(a,d,e,e2,[nm,n])
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "tred2"...
+          tred2(a,d,e,z,[nm,n])
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "daxpy"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          daxpy(n,da,dx,incx,dy,incy)
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "dcopy"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dcopy(n,dx,incx,dy,incy)
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+		Creating wrapper for Fortran function "ddot"("ddot")...
+        Constructing wrapper function "ddot"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          ddot = ddot(n,dx,incx,dy,incy)
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "dswap"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dswap(n,dx,incx,dy,incy)
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+		Creating wrapper for Fortran function "idamax"("idamax")...
+        Constructing wrapper function "idamax"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          idamax = idamax(n,dx,incx)
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "dgemm"...
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+getarrdims:warning: assumed shape array, using 0 instead of '*'
+          dgemm(transa,transb,m,n,k,alpha,a,b,beta,c,[lda,ldb,ldc])
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+		Creating wrapper for Fortran function "lsame"("lsame")...
+        Constructing wrapper function "lsame"...
+          lsame = lsame(ca,cb)
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "xerbla"...
+          xerbla(srname,info)
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "rshift128"...
+          outtop,outbtm = rshift128(intop,inbtm,shift)
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "lshift128"...
+          outtop,outbtm = lshift128(intop,inbtm,shift)
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "do_recursion"...
+          rtop,rbtm = do_recursion(atop,abtm,btop,bbtm,ctop,cbtm,dtop,dbtm)
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "gen_rand_all"...
+          gen_rand_all()
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "period_certification"...
+          period_certification()
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+		Creating wrapper for Fortran function "gen_rand32"("gen_rand32")...
+        Constructing wrapper function "gen_rand32"...
+          gen_rand32 = gen_rand32()
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+		Creating wrapper for Fortran function "gen_rand64"("gen_rand64")...
+        Constructing wrapper function "gen_rand64"...
+          gen_rand64 = gen_rand64()
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+        Constructing wrapper function "init_gen_rand"...
+          init_gen_rand(seed)
+    Generating possibly empty wrappers"
+    Maybe empty "cletkf_wloc-f2pywrappers.f"
+		Creating wrapper for Fortran function "genrand_res53"("genrand_res53")...
+        Constructing wrapper function "genrand_res53"...
+          genrand_res53 = genrand_res53()
+		Constructing F90 module support for "mod_sfmt"...
+		  Variables: mexp n n32 n64 psfmt32 psfmt64 idx initialized pos1 sl1 sl2 sr1 sr2 msk12 msk34 msk_l parity1 parity2 parity3 parity4 parity
+		Constructing F90 module support for "common_tools"...
+		  Variables: r_size r_dble r_sngl pi gg rd cp re r_omega t0c undef
+            Constructing wrapper function "common_tools.com_mean"...
+              amean = com_mean(var,[ndim])
+            Constructing wrapper function "common_tools.com_stdev"...
+              aout = com_stdev(var,[ndim])
+            Constructing wrapper function "common_tools.com_covar"...
+              cov = com_covar(var1,var2,[ndim])
+            Constructing wrapper function "common_tools.com_correl"...
+              cor = com_correl(var1,var2,[ndim])
+            Constructing wrapper function "common_tools.com_anomcorrel"...
+              cor = com_anomcorrel(var1,var2,varmean,[ndim])
+            Constructing wrapper function "common_tools.com_l2norm"...
+              anorm = com_l2norm(var,[ndim])
+            Constructing wrapper function "common_tools.com_rms"...
+              rmsv = com_rms(var,[ndim])
+            Constructing wrapper function "common_tools.com_filter_lanczos"...
+              com_filter_lanczos(fc,var,[ndim])
+            Constructing wrapper function "common_tools.com_rand"...
+              var = com_rand(ndim)
+            Constructing wrapper function "common_tools.com_randn"...
+              var = com_randn(ndim,seed)
+            Constructing wrapper function "common_tools.com_interp_spline"...
+              y5 = com_interp_spline(x,y,x5,[ndim,n])
+		Constructing F90 module support for "common_mtx"...
+            Constructing wrapper function "common_mtx.mtx_eigen"...
+              eival,eivec,nrank_eff = mtx_eigen(imode,a,[n])
+            Constructing wrapper function "common_mtx.mtx_inv"...
+              ainv = mtx_inv(a,[n])
+            Constructing wrapper function "common_mtx.mtx_sqrt"...
+              a_sqrt = mtx_sqrt(a,[n])
+            Constructing wrapper function "common_mtx.mtx_inv_rg"...
+              ff = mtx_inv_rg(aa,[n])
+		Constructing F90 module support for "common_letkf"...
+            Constructing wrapper function "common_letkf.letkf_core"...
+              trans,transm,pao = letkf_core(hdxb,rdiag,rloc,dep,parm_infl,minfl,[ne,nobsl])
+            Constructing wrapper function "common_letkf.weight_rtps"...
+              wrlx = weight_rtps(relax_alpha_spread,w,pa,xb,[ne])
+            Constructing wrapper function "common_letkf.weight_rtpp"...
+              wrlx = weight_rtpp(relax_alpha,w,[ne])
+            Constructing wrapper function "common_letkf.weight_epes"...
+              wrlx = weight_epes(relax_alpha_spreadw,w,[ne])
+            Constructing wrapper function "common_letkf.weight_modepes"...
+              wrlx = weight_modepes(relax_alpha_spreadw,w,[ne])
+		Constructing F90 module support for "common_da"...
+            Constructing wrapper function "common_da.simple_letkf_wloc"...
+Normal end

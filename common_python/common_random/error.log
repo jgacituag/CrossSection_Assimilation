@@ -1,0 +1,175 @@
+running build
+running config_cc
+unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+build_src
+building extension "common_random" sources
+f2py options: []
+f2py:> /tmp/tmpig60u32y/src.linux-x86_64-3.6/common_randommodule.c
+creating /tmp/tmpig60u32y/src.linux-x86_64-3.6
+Reading fortran codes...
+	Reading file 'common_random.f90' (format:free)
+	Reading file 'SFMT.f90' (format:free)
+Post-processing...
+	Block: common_random
+			Block: common_random
+In: :common_random:common_random.f90:common_random
+get_parameters: got "unexpected EOF while parsing (<string>, line 1)" on '3.141592653589793d0'
+In: :common_random:common_random.f90:common_random
+get_parameters: got "unexpected EOF while parsing (<string>, line 1)" on '9.81d0'
+In: :common_random:common_random.f90:common_random
+get_parameters: got "unexpected EOF while parsing (<string>, line 1)" on '287.0d0'
+In: :common_random:common_random.f90:common_random
+get_parameters: got "unexpected EOF while parsing (<string>, line 1)" on '6371.3d3'
+In: :common_random:common_random.f90:common_random
+get_parameters: got "invalid syntax (<string>, line 1)" on '7.292d-5'
+In: :common_random:common_random.f90:common_random
+get_parameters: got "unexpected EOF while parsing (<string>, line 1)" on '273.15d0'
+In: :common_random:common_random.f90:common_random
+get_parameters: got "invalid syntax (<string>, line 1)" on '3.1415926535d0/180d0'
+In: :common_random:common_random.f90:common_random
+get_parameters: got "invalid syntax (<string>, line 1)" on '180d0/3.1415926535d0'
+In: :common_random:common_random.f90:common_random
+get_parameters: got "invalid syntax (<string>, line 1)" on '7.0d0/2.0d0*rd'
+				Block: com_rand
+				Block: com_randn
+				Block: com_randn2
+			Block: mod_sfmt
+			Block: rshift128
+			Block: lshift128
+			Block: do_recursion
+			Block: gen_rand_all
+			Block: period_certification
+			Block: gen_rand32
+			Block: gen_rand64
+			Block: init_gen_rand
+			Block: genrand_res53
+Post-processing (stage 2)...
+	Block: common_random
+		Block: unknown_interface
+			Block: common_random
+				Block: com_rand
+				Block: com_randn
+				Block: com_randn2
+			Block: mod_sfmt
+			Block: rshift128
+			Block: lshift128
+			Block: do_recursion
+			Block: gen_rand_all
+			Block: period_certification
+			Block: gen_rand32
+			Block: gen_rand64
+			Block: init_gen_rand
+			Block: genrand_res53
+Building modules...
+	Building module "common_random"...
+		Constructing wrapper function "rshift128"...
+		  outtop,outbtm = rshift128(intop,inbtm,shift)
+		Constructing wrapper function "lshift128"...
+		  outtop,outbtm = lshift128(intop,inbtm,shift)
+		Constructing wrapper function "do_recursion"...
+		  rtop,rbtm = do_recursion(atop,abtm,btop,bbtm,ctop,cbtm,dtop,dbtm)
+		Constructing wrapper function "gen_rand_all"...
+		  gen_rand_all()
+		Constructing wrapper function "period_certification"...
+		  period_certification()
+		Creating wrapper for Fortran function "gen_rand32"("gen_rand32")...
+		Constructing wrapper function "gen_rand32"...
+		  gen_rand32 = gen_rand32()
+		Creating wrapper for Fortran function "gen_rand64"("gen_rand64")...
+		Constructing wrapper function "gen_rand64"...
+		  gen_rand64 = gen_rand64()
+		Constructing wrapper function "init_gen_rand"...
+		  init_gen_rand(seed)
+		Creating wrapper for Fortran function "genrand_res53"("genrand_res53")...
+		Constructing wrapper function "genrand_res53"...
+		  genrand_res53 = genrand_res53()
+		Constructing F90 module support for "common_random"...
+		  Variables: r_size r_sngl r_dble pi gg rd cp re r_omega t0c deg2rad rad2deg
+			Constructing wrapper function "common_random.com_rand"...
+			  var = com_rand(ndim)
+			Constructing wrapper function "common_random.com_randn"...
+			  var = com_randn(ndim)
+			Constructing wrapper function "common_random.com_randn2"...
+			  var = com_randn2(ndim,aux)
+		Constructing F90 module support for "mod_sfmt"...
+		  Variables: mexp n n32 n64 psfmt32 psfmt64 idx initialized pos1 sl1 sl2 sr1 sr2 msk12 msk34 msk_l parity1 parity2 parity3 parity4 parity
+	Wrote C/API module "common_random" to file "/tmp/tmpig60u32y/src.linux-x86_64-3.6/common_randommodule.c"
+	Fortran 77 wrappers are saved to "/tmp/tmpig60u32y/src.linux-x86_64-3.6/common_random-f2pywrappers.f"
+	Fortran 90 wrappers are saved to "/tmp/tmpig60u32y/src.linux-x86_64-3.6/common_random-f2pywrappers2.f90"
+  adding '/tmp/tmpig60u32y/src.linux-x86_64-3.6/fortranobject.c' to sources.
+  adding '/tmp/tmpig60u32y/src.linux-x86_64-3.6' to include_dirs.
+copying /home/jruiz/share/anaconda3/lib/python3.6/site-packages/numpy/f2py/src/fortranobject.c -> /tmp/tmpig60u32y/src.linux-x86_64-3.6
+copying /home/jruiz/share/anaconda3/lib/python3.6/site-packages/numpy/f2py/src/fortranobject.h -> /tmp/tmpig60u32y/src.linux-x86_64-3.6
+  adding '/tmp/tmpig60u32y/src.linux-x86_64-3.6/common_random-f2pywrappers.f' to sources.
+  adding '/tmp/tmpig60u32y/src.linux-x86_64-3.6/common_random-f2pywrappers2.f90' to sources.
+build_src: building npy-pkg config files
+running build_ext
+customize UnixCCompiler
+customize UnixCCompiler using build_ext
+get_default_fcompiler: matching types: '['gnu95', 'intel', 'lahey', 'pg', 'absoft', 'nag', 'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 'pathf95', 'nagfor']'
+customize Gnu95FCompiler
+Found executable /usr/bin/gfortran
+customize Gnu95FCompiler
+customize Gnu95FCompiler using build_ext
+building 'common_random' extension
+compiling C sources
+C compiler: gcc -pthread -B /home/jruiz/share/anaconda3/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC
+
+creating /tmp/tmpig60u32y/tmp
+creating /tmp/tmpig60u32y/tmp/tmpig60u32y
+creating /tmp/tmpig60u32y/tmp/tmpig60u32y/src.linux-x86_64-3.6
+compile options: '-I/tmp/tmpig60u32y/src.linux-x86_64-3.6 -I/home/jruiz/share/anaconda3/lib/python3.6/site-packages/numpy/core/include -I/home/jruiz/share/anaconda3/include/python3.6m -c'
+gcc: /tmp/tmpig60u32y/src.linux-x86_64-3.6/common_randommodule.c
+In file included from /home/jruiz/share/anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/ndarraytypes.h:1816:0,
+                 from /home/jruiz/share/anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/ndarrayobject.h:18,
+                 from /home/jruiz/share/anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/arrayobject.h:4,
+                 from /tmp/tmpig60u32y/src.linux-x86_64-3.6/fortranobject.h:13,
+                 from /tmp/tmpig60u32y/src.linux-x86_64-3.6/common_randommodule.c:16:
+/home/jruiz/share/anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:15:2: warning: #warning "Using deprecated NumPy API, disable it by " "#defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+ #warning "Using deprecated NumPy API, disable it by " \
+  ^~~~~~~
+/tmp/tmpig60u32y/src.linux-x86_64-3.6/common_randommodule.c: In function ‘PyInit_common_random’:
+/tmp/tmpig60u32y/src.linux-x86_64-3.6/common_randommodule.c:1412:3: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   for(i=0;f2py_routine_defs[i].name!=NULL;i++)
+   ^~~
+/tmp/tmpig60u32y/src.linux-x86_64-3.6/common_randommodule.c:1420:5: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the ‘for’
+     {
+     ^
+At top level:
+/tmp/tmpig60u32y/src.linux-x86_64-3.6/common_randommodule.c:143:12: warning: ‘f2py_size’ defined but not used [-Wunused-function]
+ static int f2py_size(PyArrayObject* var, ...)
+            ^~~~~~~~~
+gcc: /tmp/tmpig60u32y/src.linux-x86_64-3.6/fortranobject.c
+In file included from /home/jruiz/share/anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/ndarraytypes.h:1816:0,
+                 from /home/jruiz/share/anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/ndarrayobject.h:18,
+                 from /home/jruiz/share/anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/arrayobject.h:4,
+                 from /tmp/tmpig60u32y/src.linux-x86_64-3.6/fortranobject.h:13,
+                 from /tmp/tmpig60u32y/src.linux-x86_64-3.6/fortranobject.c:2:
+/home/jruiz/share/anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:15:2: warning: #warning "Using deprecated NumPy API, disable it by " "#defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+ #warning "Using deprecated NumPy API, disable it by " \
+  ^~~~~~~
+/tmp/tmpig60u32y/src.linux-x86_64-3.6/fortranobject.c: In function ‘format_def’:
+/tmp/tmpig60u32y/src.linux-x86_64-3.6/fortranobject.c:138:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (size < sizeof(notalloc)) {
+                  ^
+compiling Fortran 90 module sources
+Fortran f77 compiler: /usr/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: gfortran -O3 -fPIC -O3 -funroll-loops
+Fortran fix compiler: gfortran -Wall -g -ffixed-form -fno-second-underscore -O3 -fPIC -O3 -funroll-loops
+compile options: '-I/tmp/tmpig60u32y/src.linux-x86_64-3.6 -I/home/jruiz/share/anaconda3/lib/python3.6/site-packages/numpy/core/include -I/home/jruiz/share/anaconda3/include/python3.6m -c'
+extra options: '-J/tmp/tmpig60u32y/ -I/tmp/tmpig60u32y/'
+gfortran:f90: common_random.f90
+gfortran:f90: SFMT.f90
+compiling Fortran sources
+Fortran f77 compiler: /usr/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -fPIC -O3 -funroll-loops
+Fortran f90 compiler: gfortran -O3 -fPIC -O3 -funroll-loops
+Fortran fix compiler: gfortran -Wall -g -ffixed-form -fno-second-underscore -O3 -fPIC -O3 -funroll-loops
+compile options: '-I/tmp/tmpig60u32y/src.linux-x86_64-3.6 -I/home/jruiz/share/anaconda3/lib/python3.6/site-packages/numpy/core/include -I/home/jruiz/share/anaconda3/include/python3.6m -c'
+extra options: '-J/tmp/tmpig60u32y/ -I/tmp/tmpig60u32y/'
+gfortran:f90: /tmp/tmpig60u32y/src.linux-x86_64-3.6/common_random-f2pywrappers2.f90
+gfortran:f77: /tmp/tmpig60u32y/src.linux-x86_64-3.6/common_random-f2pywrappers.f
+/usr/bin/gfortran -Wall -g -Wall -g -shared /tmp/tmpig60u32y/tmp/tmpig60u32y/src.linux-x86_64-3.6/common_randommodule.o /tmp/tmpig60u32y/tmp/tmpig60u32y/src.linux-x86_64-3.6/fortranobject.o /tmp/tmpig60u32y/common_random.o /tmp/tmpig60u32y/SFMT.o /tmp/tmpig60u32y/tmp/tmpig60u32y/src.linux-x86_64-3.6/common_random-f2pywrappers.o /tmp/tmpig60u32y/tmp/tmpig60u32y/src.linux-x86_64-3.6/common_random-f2pywrappers2.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6 -lgomp -lgfortran -o ./common_random.cpython-36m-x86_64-linux-gnu.so
+Removing build directory /tmp/tmpig60u32y
