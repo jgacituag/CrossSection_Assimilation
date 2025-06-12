@@ -14,14 +14,12 @@ sys.path.append('common_python/common_modules/')
 sys.path.append('common_python/common_letkf/')
 
 import numpy as np
-#import matplotlib.pyplot as plt
 import os
-import matplotlib.pyplot as plt
 
 from cletkf_wloc      import common_da        as cda
 
 
-root_data_path='./'
+root_data_path='/home/jorge.gacitua/experimentos/CrossSection_Assimilation/Data'
 
 qg_index = 0         #Variable index corresponding to QG
 qr_index = 1         #Variable index corresponding to QR
@@ -53,17 +51,17 @@ obs_error = 5.0      #Standard deviation of the observation error.
 
 loc_scales = np.array([5,5,5])  #Localization scales in x,y and z.
 
-range_ntemp  = np.arange(1,4)            #Number of tempering iterations 
-range_alpha  = [1,2]            #Parameter controling the size of tempering steps. 
+range_ntemp  = np.arange(1,4)   #Number of tempering iterations 
+range_alpha  = [1,2]            #Parameter controling the size of tempering steps.
+
+#=========================================================
+#  READ DATA
+#=========================================================
+
+input_ens = np.load("/home/jorge.gacitua/experimentos/CrossSection_Assimilation/Data/ensemble_cross_sections_39-5S.npz")["cross_sections"]
+
 for NTemp in range_ntemp:
     for Alpha in range_alpha:
-        #=========================================================
-        #  READ DATA
-        #=========================================================
-        #TODO here we should load the realistic prior.
-        #For the moment we will generate a random prior. 
-
-        input_ens = np.load("/home/jorge.gacitua/datosmunin3/Vertical_Sections/ensemble_cross_sections.npz")["cross_sections"]
 
         #=========================================================
         #  SEPARATE THE TRUE STATE AND THE FORECAST ENSEMBLE
@@ -78,7 +76,6 @@ for NTemp in range_ntemp:
         #Get the size of the forecast ensemble (as will be used in the DA)
         [nx , ny , nz , nbv , nvar] = xf.shape
 
-
         #=========================================================
         #  GET THE OBSERVATIONS
         #=========================================================
@@ -86,7 +83,8 @@ for NTemp in range_ntemp:
         nobs = len(obs_loc_x)
         yo = np.zeros( nobs )
         hxf = np.zeros( ( nobs , nbv ) )
-
+        obs_error = obs_error * np.ones( nobs )
+        
         for ii in range( nobs )  : 
         
             ox = obs_loc_x[ii]
@@ -99,8 +97,6 @@ for NTemp in range_ntemp:
             pp = true_state[ox,oy,oz,pp_index]
 
             yo[ii] = cda.calc_ref( qr , qs , qg , tt , pp )
-
-            obs_error = obs_error * np.ones( nobs )
 
         #=========================================================
         #  COMPUTE THE TEMPERING STEPS
@@ -128,7 +124,6 @@ for NTemp in range_ntemp:
         #=========================================================
 
         for it in range(NTemp) :
-
             for ii in range( nobs ) :
                 #Loop over the ensemble members
                 for jj in range( nbv ) :
@@ -168,20 +163,14 @@ for NTemp in range_ntemp:
                                     oerr=obs_error_temp
                                     ).astype('float32')
 
-            #(nx,ny,nz,nbv,nvar,nobs,hxf,xf,dep,ox,oy,oz,locs,oerr,xa)
 
-            #Write the analysis for the update variables
+        #Write the analysis for the update variables
         print('Writing data')
         np.savez_compressed(f'{root_data_path}/output_Ntemp{NTemp}_alpha{Alpha}_8var_Rloc_5_{case}.npz',xatemp=xatemp,xf=xf,yo=yo,
-                            hxf=hxf,obs_error=obs_error,
+                            hxf=hxf,obs_error=obs_error,obs_error_temp=steps,
                             obs_loc_x=obs_loc_x,
                             obs_loc_y=obs_loc_y,
                             obs_loc_z=obs_loc_z,
                             true_state=true_state)
 
         print ( "We are done" )
-
-
-#plt.pcolor( np.mean( xatemp[:,:,:,:,:,-1] - xf , 3 )[:,0,:,0] )
-
-

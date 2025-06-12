@@ -5,12 +5,13 @@ from wrf import getvar, vertcross, CoordPair, to_np
 
 # Define ensemble members and variables
 ensemble_members = [f"{i:03d}" for i in range(1, 31)]
-variables = ["QGRAUP", "QRAIN", "QSNOW", "temp", "pressure"]
+variables = ["QGRAUP", "QRAIN", "QSNOW", "temp", "pressure","ua","va","wa"]
 nvar = len(variables)
 
 # Define cross-section coordinates
-cross_start = CoordPair(lat=-37, lon=-65)
-cross_end = CoordPair(lat=-41, lon=-63)
+lat = -39.5
+cross_start = CoordPair(lat=-39.2, lon=-65.5)
+cross_end = CoordPair(lat=-39.2, lon=-62)
 
 # Placeholder for the first file to get dimensions
 sample_file = f"/home/jorge.gacitua/datosmunin2/EXPERIMENTS_UNWEATHER/DATA/PREVENIR_LOWRESOLUTION_HYDRA_2023121612/HIST/FCST/20231216120000/{ensemble_members[0]}/wrfout_d01_2023-12-16_19:00:00"
@@ -41,4 +42,4 @@ for member_idx, member in enumerate(ensemble_members):
     wrf_file.close()
 
 # Save data to compressed npz file
-np.savez_compressed("ensemble_cross_sections.npz", cross_sections=cross_sections)
+np.savez_compressed("Data/ensemble_cross_sections_39-2S.npz", cross_sections=cross_sections)
